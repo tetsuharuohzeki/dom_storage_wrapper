@@ -1,8 +1,8 @@
 {
-    "name": "js-boilerplate",
+    "name": "dom_storage_wrapper",
     "version": "0.0.0",
     "type": "module",
-    "repository": "git@github.com:tetsuharuohzeki/js-boilerplate.git",
+    "repository": "git@github.com:tetsuharuohzeki/dom_storage_wrapper.git",
     "author": "Tetsuharu Ohzeki <tetsuharu.ohzeki@gmail.com>",
     "license": "MIT",
     "devDependencies": {
