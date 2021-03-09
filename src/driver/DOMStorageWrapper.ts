@@ -53,7 +53,7 @@ class DOMStorageWrapper implements IterableDOMStorageLikeDriver {
     }
 }
 
-async function* iterateKeysOverDOMStorage(s: Storage): AsyncGenerator<string> {
+async function* iterateKeysOverDOMStorage(s: Storage): DOMStorageLikeKeysIterableIterator {
     for (let i = 0, l = s.length; i < l; ++i) {
         const key = s.key(i);
         if (key === null) {
@@ -63,7 +63,7 @@ async function* iterateKeysOverDOMStorage(s: Storage): AsyncGenerator<string> {
     }
 }
 
-async function* iterateEntriesOverDOMStorage(s: Storage): AsyncGenerator<[string, Nullable<string>]> {
+async function* iterateEntriesOverDOMStorage(s: Storage): DOMStorageLikeEntriesIterableIterator {
     const keys = iterateKeysOverDOMStorage(s);
     for await (const k of keys) {
         const val = s.getItem(k);
