@@ -6,10 +6,10 @@
     "author": "Tetsuharu Ohzeki <tetsuharu.ohzeki@gmail.com>",
     "license": "MIT",
     "devDependencies": {
-        "prettier": "^2.2.1",
-        "typescript": "^4.2.2"
+        "prettier": "^2.3.2",
+        "typescript": "^4.4.0-beta"
     },
     "dependencies": {
-        "option-t": "^25.0.2"
+        "option-t": "^28.1.0"
     }
 }

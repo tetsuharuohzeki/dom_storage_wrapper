@@ -2,17 +2,17 @@
 # yarn lockfile v1
 
 
-option-t@^25.0.2:
-  version "25.0.2"
-  resolved "https://registry.yarnpkg.com/option-t/-/option-t-25.0.2.tgz#8339628e1ddd7ae85a4789d38225e064a880f593"
-  integrity sha512-m9LHi/xEkI4pY63qBpmJsKtENSHp4VyBLZxcLUp3dvzfHGIBmWRgzTWYqjViwuhkfxV8D1QL1enTbZgjvPhAmg==
+option-t@^28.1.0:
+  version "28.1.0"
+  resolved "https://registry.yarnpkg.com/option-t/-/option-t-28.1.0.tgz#ade5ad680c237ab9289c9fa8abfe122006dc7fed"
+  integrity sha512-JeGfidd2zDmCGjY8BCtAlqQfVhtZw5uNx36MwZtbEsR9N6CgqKUK+cb8cEHVbYQAGLvERHmgYi0SdFDuxIHkRg==
 
-prettier@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.2.1.tgz#795a1a78dd52f073da0cd42b21f9c91381923ff5"
-  integrity sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
+prettier@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.3.2.tgz#ef280a05ec253712e486233db5c6f23441e7342d"
+  integrity sha512-lnJzDfJ66zkMy58OL5/NY5zp70S7Nz6KqcKkXYzn2tMVrNxvbqaBpg7H3qHaLxCJ5lNMsGuM8+ohS7cZrthdLQ==
 
-typescript@^4.2.2:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.2.tgz#1450f020618f872db0ea17317d16d8da8ddb8c4c"
-  integrity sha512-tbb+NVrLfnsJy3M59lsDgrzWIflR4d4TIUjz+heUnHZwdF7YsrMTKoRERiIvI2lvBG95dfpLxB21WZhys1bgaQ==
+typescript@^4.4.0-beta:
+  version "4.4.0-dev.20210702"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.4.0-dev.20210702.tgz#7e3fdf60071baf2f5e9a7603707afff7f993bd7a"
+  integrity sha512-M6rwczCm6X/0exbCYxki+Xe2+Kvn2aLeAPUE8n7EuuB3ul0ag2NnUlqG9NQAu97kT4oKwPemtQcbMkthtj2vBg==
