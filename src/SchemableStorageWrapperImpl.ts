@@ -6,7 +6,9 @@ import { createPrefixedStorage } from './PrefixedStorageImpl';
 import { SchemableStorageWrapper, StorageKey, StorageScheme } from './SchemableStorageWrapper';
 import { DOMStorageLikeDriver } from './driver/DOMStorageLikeDriver';
 
-class SchemableStorageWrapperImpl<TStorageSchema extends StorageScheme> implements SchemableStorageWrapper<TStorageSchema> {
+class SchemableStorageWrapperImpl<TStorageSchema extends StorageScheme>
+    implements SchemableStorageWrapper<TStorageSchema>
+{
     private _driver: PrefixedStorage<StorageKey>;
 
     constructor(driver: PrefixedStorage<StorageKey>) {

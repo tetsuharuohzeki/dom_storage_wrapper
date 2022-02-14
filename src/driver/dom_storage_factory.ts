@@ -36,7 +36,10 @@ function isDOMStorageWritable(storage: Storage, keyPrefix: string): boolean {
     }
 }
 
-function createDOMStorage(storage: Maybe<Storage>, keyPrefix: string): Result<DOMStorageLikeDriver, InitializationErrorKind> {
+function createDOMStorage(
+    storage: Maybe<Storage>,
+    keyPrefix: string
+): Result<DOMStorageLikeDriver, InitializationErrorKind> {
     if (!isDOMStorageNonNullable(storage)) {
         return createErr(InitializationErrorKind.NoInstance);
     }
@@ -51,13 +54,17 @@ function createDOMStorage(storage: Maybe<Storage>, keyPrefix: string): Result<DO
     return result;
 }
 
-export async function createLocalStorage(keyPrefix: string): Promise<Result<DOMStorageLikeDriver, InitializationErrorKind>> {
+export async function createLocalStorage(
+    keyPrefix: string
+): Promise<Result<DOMStorageLikeDriver, InitializationErrorKind>> {
     const storage = globalThis.localStorage;
     const r = createDOMStorage(storage, keyPrefix);
     return r;
 }
 
-export async function createSessionStorage(keyPrefix: string): Promise<Result<DOMStorageLikeDriver, InitializationErrorKind>> {
+export async function createSessionStorage(
+    keyPrefix: string
+): Promise<Result<DOMStorageLikeDriver, InitializationErrorKind>> {
     const storage = globalThis.sessionStorage;
     const r = createDOMStorage(storage, keyPrefix);
     return r;
