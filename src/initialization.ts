@@ -1,6 +1,6 @@
 import { isOk } from 'option-t/esm/PlainResult/Result';
 import { unwrapFromResult } from 'option-t/esm/PlainResult/unwrap';
-import { createInMemoryStorage, createLocalStorage, createSessionStorage, DOMStorageLikeDriver } from './driver/mod';
+import { createInMemoryStorage, createLocalStorage, createSessionStorage, DOMStorageLikeDriver } from './driver/mod.js';
 
 export async function createLocalStorageWithFallback(keyPrefix: string): Promise<DOMStorageLikeDriver> {
     const real = await createLocalStorage(keyPrefix);

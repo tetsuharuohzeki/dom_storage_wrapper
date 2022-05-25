@@ -5,7 +5,7 @@ import type {
     IterableDOMStorageLikeDriver,
     DOMStorageLikeEntriesIterableIterator,
     DOMStorageLikeKeysIterableIterator,
-} from './DOMStorageLikeDriver';
+} from './DOMStorageLikeDriver.js';
 
 class InMemoryStorage implements IterableDOMStorageLikeDriver {
     private _backend: Map<string, string>;

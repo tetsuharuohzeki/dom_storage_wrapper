@@ -1,6 +1,6 @@
 import { Result, isErr, createOk } from 'option-t/esm/PlainResult/Result';
 import { unwrapFromResult } from 'option-t/esm/PlainResult/unwrap';
-import { PrefixedStorage } from './PrefixedStorage';
+import { PrefixedStorage } from './PrefixedStorage.js';
 
 /**
  *  This function would write a new version after _migrator_ completed.

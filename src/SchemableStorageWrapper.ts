@@ -1,8 +1,8 @@
 import type { Nullable } from 'option-t/esm/Nullable/Nullable';
 import { Result } from 'option-t/esm/PlainResult/Result';
 
-import { JsonableValue } from './JsonableValue';
-import { PrefixedStorage } from './PrefixedStorage';
+import { JsonableValue } from './JsonableValue.js';
+import { PrefixedStorage } from './PrefixedStorage.js';
 
 export type StorageKey = string;
 

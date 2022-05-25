@@ -1,8 +1,8 @@
 import type { Maybe } from 'option-t/lib/Maybe/Maybe';
-import { Result, createOk, createErr } from 'option-t/lib/PlainResult//Result';
+import { Result, createOk, createErr } from 'option-t/lib/PlainResult/Result';
 
-import type { DOMStorageLikeDriver } from './DOMStorageLikeDriver';
-import { createDOMStorageWrapper } from './DOMStorageWrapper';
+import type { DOMStorageLikeDriver } from './DOMStorageLikeDriver.js';
+import { createDOMStorageWrapper } from './DOMStorageWrapper.js';
 
 export enum InitializationErrorKind {
     NoInstance,

@@ -5,6 +5,12 @@
     "repository": "git@github.com:tetsuharuohzeki/dom_storage_wrapper.git",
     "author": "Tetsuharu Ohzeki <tetsuharu.ohzeki@gmail.com>",
     "license": "MIT",
+    "exports": {
+        ".": {
+            "types": "./__dist/mod.d.ts",
+            "default": "./__dist/mod.js"
+        }
+    },
     "devDependencies": {
         "prettier": "^2.6.2",
         "typescript": "^4.7.2"

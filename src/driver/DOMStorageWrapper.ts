@@ -1,11 +1,11 @@
 import type { Nullable } from 'option-t/esm/Nullable/Nullable';
-import { Result, createOk, createErr } from 'option-t/lib/PlainResult//Result';
+import { Result, createOk, createErr } from 'option-t/lib/PlainResult/Result';
 
 import type {
     IterableDOMStorageLikeDriver,
     DOMStorageLikeEntriesIterableIterator,
     DOMStorageLikeKeysIterableIterator,
-} from './DOMStorageLikeDriver';
+} from './DOMStorageLikeDriver.js';
 
 class DOMStorageWrapper implements IterableDOMStorageLikeDriver {
     private _backend: Storage;

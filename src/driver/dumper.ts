@@ -1,4 +1,4 @@
-import type { IterableDOMStorageLikeDriver } from './DOMStorageLikeDriver';
+import type { IterableDOMStorageLikeDriver } from './DOMStorageLikeDriver.js';
 
 export async function dumpAsMap(storage: IterableDOMStorageLikeDriver): Promise<Map<string, string>> {
     const map = new Map();

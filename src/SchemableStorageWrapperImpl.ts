@@ -1,10 +1,10 @@
 import type { Nullable } from 'option-t/esm/Nullable/Nullable';
 import { Result } from 'option-t/esm/PlainResult/Result';
 
-import { PrefixedStorage } from './PrefixedStorage';
-import { createPrefixedStorage } from './PrefixedStorageImpl';
-import { SchemableStorageWrapper, StorageKey, StorageScheme } from './SchemableStorageWrapper';
-import { DOMStorageLikeDriver } from './driver/DOMStorageLikeDriver';
+import { PrefixedStorage } from './PrefixedStorage.js';
+import { createPrefixedStorage } from './PrefixedStorageImpl.js';
+import { SchemableStorageWrapper, StorageKey, StorageScheme } from './SchemableStorageWrapper.js';
+import { DOMStorageLikeDriver } from './driver/DOMStorageLikeDriver.js';
 
 class SchemableStorageWrapperImpl<TStorageSchema extends StorageScheme>
     implements SchemableStorageWrapper<TStorageSchema>

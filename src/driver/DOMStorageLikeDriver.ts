@@ -1,5 +1,5 @@
 import type { Nullable } from 'option-t/esm/Nullable/Nullable';
-import type { Result } from 'option-t/lib/PlainResult//Result';
+import type { Result } from 'option-t/lib/PlainResult/Result';
 
 export type DOMStorageLikeKeysIterableIterator = AsyncIterableIterator<string>;
 export type DOMStorageLikeEntriesIterableIterator = AsyncIterableIterator<[string, Nullable<string>]>;

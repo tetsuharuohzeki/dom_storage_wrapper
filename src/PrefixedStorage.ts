@@ -1,7 +1,7 @@
 import type { Nullable } from 'option-t/esm/Nullable/Nullable';
 import { Result } from 'option-t/esm/PlainResult/Result';
 
-import type { DOMStorageLikeDriver } from './driver/DOMStorageLikeDriver';
+import type { DOMStorageLikeDriver } from './driver/DOMStorageLikeDriver.js';
 
 export interface PrefixedStorage<TKeyEnum extends string> {
     readonly driver: DOMStorageLikeDriver;

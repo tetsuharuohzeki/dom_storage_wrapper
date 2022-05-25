@@ -2,8 +2,8 @@ import type { Nullable } from 'option-t/esm/Nullable/Nullable';
 import { Result, createErr, createOk, isErr } from 'option-t/esm/PlainResult/Result';
 import { unwrapFromResult } from 'option-t/esm/PlainResult/unwrap';
 
-import { PrefixedStorage } from './PrefixedStorage';
-import type { DOMStorageLikeDriver } from './driver/DOMStorageLikeDriver';
+import { PrefixedStorage } from './PrefixedStorage.js';
+import type { DOMStorageLikeDriver } from './driver/DOMStorageLikeDriver.js';
 
 function parseJSON<TValue = unknown>(raw: string): Result<TValue, unknown> {
     let val: TValue;
