@@ -1,6 +1,5 @@
 import type { Nullable } from 'option-t/esm/Nullable/Nullable';
-import { Result, createErr, createOk, isErr } from 'option-t/esm/PlainResult/Result';
-import { unwrapFromResult } from 'option-t/esm/PlainResult/unwrap';
+import { Result, createErr, createOk, isErr, unwrapOk } from 'option-t/esm/PlainResult/Result';
 
 import { PrefixedStorage } from './PrefixedStorage.js';
 import type { DOMStorageLikeDriver } from './driver/DOMStorageLikeDriver.js';
@@ -82,7 +81,7 @@ class PrefixedStorageImpl<TKeyEnum extends string> implements PrefixedStorage<TK
             return input;
         }
 
-        const valString = unwrapFromResult(input);
+        const valString = unwrapOk(input);
         const r = await this.set(key, valString);
         return r;
     }

@@ -1,5 +1,4 @@
-import { Result, isErr, createOk } from 'option-t/esm/PlainResult/Result';
-import { unwrapFromResult } from 'option-t/esm/PlainResult/unwrap';
+import { Result, isErr, createOk, unwrapOk } from 'option-t/esm/PlainResult/Result';
 import { PrefixedStorage } from './PrefixedStorage.js';
 
 /**
@@ -58,7 +57,7 @@ export async function upgradeStorage<TKeyEnum extends string>(
         return currentVersionResult;
     }
 
-    const currentVersion = unwrapFromResult(currentVersionResult);
+    const currentVersion = unwrapOk(currentVersionResult);
     if (currentVersion !== null) {
         if (newVersion > currentVersion) {
             await migrator(storage, currentVersion);
@@ -80,7 +79,7 @@ export async function upgradeStorage2<TKeyEnum extends string>(
         return currentVersionResult;
     }
 
-    const currentVersion = unwrapFromResult(currentVersionResult);
+    const currentVersion = unwrapOk(currentVersionResult);
     if (currentVersion === null) {
         // for the first conversion.
         const update = await storage.setJSON(versionKey, newVersion);
