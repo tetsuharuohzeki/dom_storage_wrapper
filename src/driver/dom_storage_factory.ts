@@ -1,5 +1,5 @@
-import type { Maybe } from 'option-t/lib/Maybe/Maybe';
-import { Result, createOk, createErr } from 'option-t/lib/PlainResult/Result';
+import type { Maybe } from 'option-t/esm/Maybe/Maybe';
+import { Result, createOk, createErr } from 'option-t/esm/PlainResult/Result';
 
 import type { DOMStorageLikeDriver } from './DOMStorageLikeDriver.js';
 import { createDOMStorageWrapper } from './DOMStorageWrapper.js';
